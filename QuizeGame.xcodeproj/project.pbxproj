@@ -12,6 +12,11 @@
 		B85973C22095AB5F0067EBD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85973C02095AB5F0067EBD3 /* Main.storyboard */; };
 		B85973C42095AB610067EBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85973C32095AB610067EBD3 /* Assets.xcassets */; };
 		B85973C72095AB610067EBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85973C52095AB610067EBD3 /* LaunchScreen.storyboard */; };
+		B85973CF2095B0840067EBD3 /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85973CE2095B0840067EBD3 /* MenuCollectionViewController.swift */; };
+		B85973D12095BC340067EBD3 /* ImageQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85973D02095BC340067EBD3 /* ImageQuestionViewController.swift */; };
+		B85973D32095C14E0067EBD3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85973D22095C14E0067EBD3 /* Question.swift */; };
+		B85973D52095CEA60067EBD3 /* FinishedImageQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85973D42095CEA60067EBD3 /* FinishedImageQuestionViewController.swift */; };
+		B85973D92095D6970067EBD3 /* RightToLeftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85973D82095D6970067EBD3 /* RightToLeftSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		B85973C32095AB610067EBD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85973C62095AB610067EBD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B85973C82095AB610067EBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85973CE2095B0840067EBD3 /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
+		B85973D02095BC340067EBD3 /* ImageQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuestionViewController.swift; sourceTree = "<group>"; };
+		B85973D22095C14E0067EBD3 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B85973D42095CEA60067EBD3 /* FinishedImageQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedImageQuestionViewController.swift; sourceTree = "<group>"; };
+		B85973D82095D6970067EBD3 /* RightToLeftSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightToLeftSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				B85973C32095AB610067EBD3 /* Assets.xcassets */,
 				B85973C52095AB610067EBD3 /* LaunchScreen.storyboard */,
 				B85973C82095AB610067EBD3 /* Info.plist */,
+				B85973CE2095B0840067EBD3 /* MenuCollectionViewController.swift */,
+				B85973D02095BC340067EBD3 /* ImageQuestionViewController.swift */,
+				B85973D42095CEA60067EBD3 /* FinishedImageQuestionViewController.swift */,
+				B85973D22095C14E0067EBD3 /* Question.swift */,
+				B85973D82095D6970067EBD3 /* RightToLeftSegue.swift */,
 			);
 			path = QuizeGame;
 			sourceTree = "<group>";
@@ -135,7 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85973D32095C14E0067EBD3 /* Question.swift in Sources */,
+				B85973CF2095B0840067EBD3 /* MenuCollectionViewController.swift in Sources */,
+				B85973D52095CEA60067EBD3 /* FinishedImageQuestionViewController.swift in Sources */,
 				B85973BF2095AB5F0067EBD3 /* ViewController.swift in Sources */,
+				B85973D12095BC340067EBD3 /* ImageQuestionViewController.swift in Sources */,
+				B85973D92095D6970067EBD3 /* RightToLeftSegue.swift in Sources */,
 				B85973BD2095AB5F0067EBD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = max.QuizeGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = max.QuizeGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
