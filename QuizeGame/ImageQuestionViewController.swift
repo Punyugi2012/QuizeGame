@@ -50,6 +50,7 @@ class ImageQuestionViewController: UIViewController {
         UIApplication.shared.beginIgnoringInteractionEvents()
         if !questions.isEmpty {
             let preColor = sender.backgroundColor
+            var preButton = UIButton()
             self.currentQuestion += 1
             if sender.currentTitle == self.answer {
                 self.corrected += 1
@@ -57,10 +58,18 @@ class ImageQuestionViewController: UIViewController {
             }
             else {
                 sender.backgroundColor = UIColor.red
+                for i in 0...3 {
+                    if self.myButtons[i].currentTitle == self.answer {
+                        preButton = self.myButtons[i]
+                        self.myButtons[i].backgroundColor = UIColor.green
+                        break
+                    }
+                }
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.myConstraint.constant = -500
                 sender.backgroundColor = preColor
+                preButton.backgroundColor = preColor
                 self.animateView()
             }
         }
@@ -71,8 +80,14 @@ class ImageQuestionViewController: UIViewController {
             }
             else {
                 sender.backgroundColor = UIColor.red
+                for i in 0...3 {
+                    if self.myButtons[i].currentTitle == self.answer {
+                        self.myButtons[i].backgroundColor = UIColor.green
+                        break
+                    }
+                }
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.performSegue(withIdentifier: "ToFinish", sender: self)
                 UIApplication.shared.endIgnoringInteractionEvents()
             }
@@ -87,14 +102,14 @@ class ImageQuestionViewController: UIViewController {
     }
     
     func animateView() {
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.transition(with: self.myView, duration: 0.3, options: [], animations: {
             self.myView.alpha = 0
-            self.view.layoutIfNeeded()
             self.myConstraint.constant = -500
+            self.view.layoutIfNeeded()
         }) { (true) in
             self.currentQuestionLabel.text = "ข้อ \(self.currentQuestion) / 4"
             self.setQuestion()
-            UIView.animate(withDuration: 0.45, animations: {
+            UIView.transition(with: self.myView, duration: 0.3, options: [], animations: {
                 self.myView.alpha = 1
                 self.myConstraint.constant = 0
             }, completion: { (true) in
@@ -102,5 +117,6 @@ class ImageQuestionViewController: UIViewController {
             })
         }
     }
-
+    
 }
+
