@@ -30,16 +30,14 @@ class ImageQuestionViewController: UIViewController {
     }
     
     func setQuestion() {
-        if !questions.isEmpty {
-            let numOfQuestion = Int(arc4random_uniform(UInt32(self.questions.count)))
-            let question = self.questions[numOfQuestion]
-            self.questionImage.image = UIImage(named: question.image)
-            self.answer = question.answer
-            for i in 0...3 {
-                self.myButtons[i].setTitle(question.answers[i], for: .normal)
-            }
-            self.questions.remove(at: numOfQuestion)
+        let numOfQuestion = Int(arc4random_uniform(UInt32(self.questions.count)))
+        let question = self.questions[numOfQuestion]
+        self.questionImage.image = UIImage(named: question.image)
+        self.answer = question.image
+        for i in 0...3 {
+            self.myButtons[i].setTitle(question.answers[i], for: .normal)
         }
+        self.questions.remove(at: numOfQuestion)
     }
     
     @IBAction func touchAnswer(_ sender: UIButton) {

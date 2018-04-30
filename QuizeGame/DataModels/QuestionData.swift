@@ -11,15 +11,15 @@ import Foundation
 class QuestionData {
     class func getImageQuestions() -> [ImageQuestion] {
         return  [
-            ImageQuestion("นก", ["นก", "แมว", "สุนัข", "น้ำตก"], "นก"),
-            ImageQuestion("แมว", ["นก", "แมว", "สุนัข", "น้ำตก"], "แมว"),
-            ImageQuestion("สุนัข", ["นก", "แมว", "สุนัข", "น้ำตก"], "สุนัข"),
-            ImageQuestion("น้ำตก", ["นก", "แมว", "สุนัข", "น้ำตก"], "น้ำตก")
+            ImageQuestion("นก", ["นก", "แมว", "สุนัข", "น้ำตก"]),
+            ImageQuestion("แมว", ["นก", "แมว", "สุนัข", "น้ำตก"]),
+            ImageQuestion("สุนัข", ["นก", "แมว", "สุนัข", "น้ำตก"]),
+            ImageQuestion("น้ำตก", ["นก", "แมว", "สุนัข", "น้ำตก"])
         ]
     }
     class func getSoundQuestions() -> [SoundQuestion] {
         return [
-            SoundQuestion("ค้างคาว", ["ค้างคาว", "สุนัข", "งู", "นก"], "ค้างคาว")
+            SoundQuestion("ค้างคาว", ["ค้างคาว", "สุนัข", "งู", "นก"])
         ]
     }
 }
