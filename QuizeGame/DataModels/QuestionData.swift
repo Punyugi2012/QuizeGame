@@ -17,7 +17,7 @@ class QuestionData {
             ImageQuestion("น้ำตก", ["นก", "แมว", "สุนัข", "น้ำตก"], "น้ำตก")
         ]
     }
-    class func getSoundQuestion() -> [SoundQuestion] {
+    class func getSoundQuestions() -> [SoundQuestion] {
         return [
             SoundQuestion("ค้างคาว", ["ค้างคาว", "สุนัข", "งู", "นก"], "ค้างคาว")
         ]
