@@ -10,12 +10,7 @@ import UIKit
 
 class ImageQuestionViewController: UIViewController {
 
-    var questions: [Question] = [
-        Question("นก", ["นก", "แมว", "สุนัข", "น้ำตก"], "นก"),
-        Question("แมว", ["นก", "แมว", "สุนัข", "น้ำตก"], "แมว"),
-        Question("สุนัข", ["นก", "แมว", "สุนัข", "น้ำตก"], "สุนัข"),
-        Question("น้ำตก", ["นก", "แมว", "สุนัข", "น้ำตก"], "น้ำตก")
-    ]
+    var questions: [ImageQuestion] = []
     
     @IBOutlet var myButtons: [UIButton]!
     @IBOutlet weak var questionImage: UIImageView!
@@ -29,6 +24,7 @@ class ImageQuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.questions = QuestionData.getImageQuestions()
         self.currentQuestionLabel.text = "ข้อ \(self.currentQuestion) / 4"
         self.setQuestion()
     }

@@ -8,12 +8,23 @@
 
 import Foundation
 
-class Question {
+class ImageQuestion {
     var image: String
     var answers: [String]
     var answer: String
     init(_ image: String, _ answers: [String], _ answer: String) {
         self.image = image
+        self.answers = answers
+        self.answer = answer
+    }
+}
+
+class SoundQuestion {
+    var soundName: String
+    var answers: [String]
+    var answer: String
+    init(_ soundName: String, _ answers: [String], _ answer: String) {
+        self.soundName = soundName
         self.answers = answers
         self.answer = answer
     }
