@@ -18,7 +18,7 @@ class FinishedImageQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.correctedLabel.text = "ถูก \(getCorreted) ข้อ"
-        self.inCorrectedLabel.text = "ผิด \(4-getCorreted) ข้อ"
+        self.inCorrectedLabel.text = "ผิด \(10-getCorreted) ข้อ"
 
         // Do any additional setup after loading the view.
     }

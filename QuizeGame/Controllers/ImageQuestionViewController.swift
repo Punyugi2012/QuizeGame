@@ -11,7 +11,7 @@ import UIKit
 class ImageQuestionViewController: UIViewController {
 
     var questions: [ImageQuestion] = []
-    
+    var bufferQuestions: [ImageQuestion] = []
     @IBOutlet var myButtons: [UIButton]!
     @IBOutlet weak var questionImage: UIImageView!
     @IBOutlet weak var myView: UIView!
@@ -24,21 +24,38 @@ class ImageQuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.questions = QuestionData.getImageQuestions()
-        self.currentQuestionLabel.text = "ข้อ \(self.currentQuestion) / 4"
+        self.bufferQuestions = QuestionData.getImageQuestions()
+        self.questions = self.chooseImageQuestion(10)
+        self.currentQuestionLabel.text = "ข้อ \(self.currentQuestion) / 10"
         self.setQuestion()
+    }
+    
+    func chooseImageQuestion(_ number: Int) -> [ImageQuestion] {
+        var imageQuestions: [ImageQuestion] = []
+        var i = 1
+        while i <= number {
+            let random = Int(arc4random_uniform(UInt32(self.bufferQuestions.count)))
+            if (imageQuestions.index { (imageQuestion) -> Bool in
+                return imageQuestion.image == self.bufferQuestions[random].image
+            }) == nil {
+                imageQuestions.append(self.bufferQuestions[random])
+                i += 1
+            }
+        }
+        return imageQuestions
     }
     
     func setQuestion() {
         let numOfQuestion = Int(arc4random_uniform(UInt32(self.questions.count)))
         let question = self.questions[numOfQuestion]
-        self.questionImage.image = UIImage(named: question.image)
         self.answer = question.image
+        self.questionImage.image = UIImage(named: question.image)
         for i in 0...3 {
             self.myButtons[i].setTitle(question.answers[i], for: .normal)
         }
         self.questions.remove(at: numOfQuestion)
     }
+    
     
     @IBAction func touchAnswer(_ sender: UIButton) {
         UIApplication.shared.beginIgnoringInteractionEvents()
@@ -101,7 +118,7 @@ class ImageQuestionViewController: UIViewController {
             self.myConstraint.constant = -500
             self.view.layoutIfNeeded()
         }) { (true) in
-            self.currentQuestionLabel.text = "ข้อ \(self.currentQuestion) / 4"
+            self.currentQuestionLabel.text = "ข้อ \(self.currentQuestion) / 10"
             self.setQuestion()
             UIView.transition(with: self.myView, duration: 0.3, options: [], animations: {
                 self.myView.alpha = 1
