@@ -14,6 +14,7 @@ class FinishedImageQuestionViewController: UIViewController {
     @IBOutlet weak var inCorrectedLabel: UILabel!
     
     var getCorreted: Int = 0
+    var typeAgain: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,11 @@ class FinishedImageQuestionViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func onPlayAgain(_ sender: UIButton) {
+        performSegue(withIdentifier: self.typeAgain, sender: self)
     }
     
 

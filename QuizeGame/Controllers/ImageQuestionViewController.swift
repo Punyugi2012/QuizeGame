@@ -77,7 +77,7 @@ class ImageQuestionViewController: UIViewController {
                     }
                 }
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                 self.myConstraint.constant = -500
                 sender.backgroundColor = preColor
                 preButton.backgroundColor = preColor
@@ -98,7 +98,7 @@ class ImageQuestionViewController: UIViewController {
                     }
                 }
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                 self.performSegue(withIdentifier: "ToFinish", sender: self)
                 UIApplication.shared.endIgnoringInteractionEvents()
             }
@@ -109,6 +109,7 @@ class ImageQuestionViewController: UIViewController {
         if segue.identifier == "ToFinish" {
             let destination = segue.destination as! FinishedImageQuestionViewController
             destination.getCorreted = self.corrected
+            destination.typeAgain = "ToImageQuestionAgain"
         }
     }
     
