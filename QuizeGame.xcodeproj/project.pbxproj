@@ -42,6 +42,11 @@
 		B86556922098538A000EED37 /* ม้า.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B865567B20985389000EED37 /* ม้า.mp3 */; };
 		B86556932098538A000EED37 /* ตีกอล์ฟ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B865567C20985389000EED37 /* ตีกอล์ฟ.mp3 */; };
 		B86556942098538A000EED37 /* วัว.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B865567D2098538A000EED37 /* วัว.mp3 */; };
+		B8B85605209B16560078D584 /* PrepareSoundQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B85603209B16560078D584 /* PrepareSoundQuestion.storyboard */; };
+		B8B85607209B17390078D584 /* PrepareImageQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B85606209B17390078D584 /* PrepareImageQuestion.storyboard */; };
+		B8B85609209B177A0078D584 /* ImageQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B85608209B177A0078D584 /* ImageQuestion.storyboard */; };
+		B8B8560C209B17910078D584 /* SoundQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B8560A209B17910078D584 /* SoundQuestion.storyboard */; };
+		B8B8560E209B17DE0078D584 /* FinishPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B8560D209B17DE0078D584 /* FinishPlay.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +87,11 @@
 		B865567B20985389000EED37 /* ม้า.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ม้า.mp3"; sourceTree = "<group>"; };
 		B865567C20985389000EED37 /* ตีกอล์ฟ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ตีกอล์ฟ.mp3"; sourceTree = "<group>"; };
 		B865567D2098538A000EED37 /* วัว.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "วัว.mp3"; sourceTree = "<group>"; };
+		B8B85604209B16560078D584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = QuizeGame/Views/Base.lproj/PrepareSoundQuestion.storyboard; sourceTree = "<group>"; };
+		B8B85606209B17390078D584 /* PrepareImageQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PrepareImageQuestion.storyboard; sourceTree = "<group>"; };
+		B8B85608209B177A0078D584 /* ImageQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageQuestion.storyboard; sourceTree = "<group>"; };
+		B8B8560B209B17910078D584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = QuizeGame/Views/Base.lproj/SoundQuestion.storyboard; sourceTree = "<group>"; };
+		B8B8560D209B17DE0078D584 /* FinishPlay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishPlay.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,11 @@
 		B84AB41D209731B7006A988C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B8B8560A209B17910078D584 /* SoundQuestion.storyboard */,
+				B8B8560D209B17DE0078D584 /* FinishPlay.storyboard */,
+				B8B85608209B177A0078D584 /* ImageQuestion.storyboard */,
+				B8B85603209B16560078D584 /* PrepareSoundQuestion.storyboard */,
+				B8B85606209B17390078D584 /* PrepareImageQuestion.storyboard */,
 				B85973C52095AB610067EBD3 /* LaunchScreen.storyboard */,
 				B85973C02095AB5F0067EBD3 /* Main.storyboard */,
 			);
@@ -261,15 +276,20 @@
 				B86556942098538A000EED37 /* วัว.mp3 in Resources */,
 				B86556882098538A000EED37 /* รถเบรค.mp3 in Resources */,
 				B865567E2098538A000EED37 /* ปิดประตู.mp3 in Resources */,
+				B8B8560C209B17910078D584 /* SoundQuestion.storyboard in Resources */,
 				B86556912098538A000EED37 /* ต่อสู้.mp3 in Resources */,
+				B8B8560E209B17DE0078D584 /* FinishPlay.storyboard in Resources */,
 				B86556922098538A000EED37 /* ม้า.mp3 in Resources */,
 				B86556892098538A000EED37 /* แซ่.mp3 in Resources */,
 				B865568F2098538A000EED37 /* สนุ๊กเกอร์.mp3 in Resources */,
 				B865568B2098538A000EED37 /* คลื่น.mp3 in Resources */,
+				B8B85609209B177A0078D584 /* ImageQuestion.storyboard in Resources */,
 				B86556832098538A000EED37 /* หมู.mp3 in Resources */,
 				B86556852098538A000EED37 /* นกฮูก.mp3 in Resources */,
 				B85973C42095AB610067EBD3 /* Assets.xcassets in Resources */,
 				B86556822098538A000EED37 /* เป็ด.mp3 in Resources */,
+				B8B85607209B17390078D584 /* PrepareImageQuestion.storyboard in Resources */,
+				B8B85605209B16560078D584 /* PrepareSoundQuestion.storyboard in Resources */,
 				B86556812098538A000EED37 /* ช้าง.mp3 in Resources */,
 				B85973C22095AB5F0067EBD3 /* Main.storyboard in Resources */,
 				B865568E2098538A000EED37 /* แกะ.mp3 in Resources */,
@@ -317,6 +337,22 @@
 				B85973C62095AB610067EBD3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B8B85603209B16560078D584 /* PrepareSoundQuestion.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8B85604209B16560078D584 /* Base */,
+			);
+			name = PrepareSoundQuestion.storyboard;
+			sourceTree = "<group>";
+		};
+		B8B8560A209B17910078D584 /* SoundQuestion.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8B8560B209B17910078D584 /* Base */,
+			);
+			name = SoundQuestion.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

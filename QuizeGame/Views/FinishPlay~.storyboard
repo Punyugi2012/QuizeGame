@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -127,6 +128,76 @@
             </objects>
             <point key="canvasLocation" x="-370" y="588"/>
         </scene>
+        <!--Finished Image Question View Controller-->
+        <scene sceneID="5Kp-5G-qlM">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-zgb-FP-vDG" id="zgb-FP-vDG" customClass="FinishedImageQuestionViewController" customModule="QuizeGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z25-Hz-HT5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50y-ZZ-euG">
+                                <rect key="frame" x="142" y="324" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="เล่นอีกครั้ง"/>
+                                <connections>
+                                    <action selector="onPlayAgain:" destination="zgb-FP-vDG" eventType="touchUpInside" id="DzA-5H-SaN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="จบเกมส์" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyc-3f-x08">
+                                <rect key="frame" x="111" y="20" width="192" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ถูก 2 ข้อ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st6-6I-1eo">
+                                <rect key="frame" x="65" y="178" width="277" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ทั้งหมด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKK-HU-SGv">
+                                <rect key="frame" x="65" y="116" width="277" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ผิด 2 ข้อ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se6-aT-4Ok">
+                                <rect key="frame" x="65" y="240" width="277" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajs-Jm-Tdv">
+                                <rect key="frame" x="142" y="395" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="กลับเมนู"/>
+                                <connections>
+                                    <segue destination="dOe-kz-oIW" kind="unwind" unwindAction="unwindSegue:" id="Lbf-pL-5kh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7IF-wt-oEa"/>
+                    </view>
+                    <connections>
+                        <outlet property="correctedLabel" destination="st6-6I-1eo" id="mAx-0k-VGt"/>
+                        <outlet property="inCorrectedLabel" destination="Se6-aT-4Ok" id="gwm-b6-9a7"/>
+                        <segue destination="FZv-fb-dYw" kind="presentation" identifier="ToImageQuestionAgain" modalTransitionStyle="crossDissolve" id="ePy-Ep-isw"/>
+                        <segue destination="Vlu-8S-JAW" kind="presentation" identifier="ToSoundQuestionAgain" modalTransitionStyle="crossDissolve" id="5pZ-Dj-nJ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOv-gE-RqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dOe-kz-oIW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2426" y="541"/>
+        </scene>
         <!--PrepareSoundQuestion-->
         <scene sceneID="qGg-UV-OtW">
             <objects>
@@ -149,7 +220,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-OI5-cW-NCt" storyboardName="ImageQuestion" referencedIdentifier="UIViewController-OI5-cW-NCt" id="FZv-fb-dYw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OX-Fs-EgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128" y="540"/>
+            <point key="canvasLocation" x="1409" y="126"/>
         </scene>
         <!--UIViewController-0eI-5G-HDP-->
         <scene sceneID="qcy-u8-0tD">
@@ -157,15 +228,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-0eI-5G-HDP" storyboardName="SoundQuestion" referencedIdentifier="UIViewController-0eI-5G-HDP" id="Vlu-8S-JAW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tck-xc-sUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1127" y="667"/>
-        </scene>
-        <!--UIViewController-zgb-FP-vDG-->
-        <scene sceneID="A0x-94-d4V">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-zgb-FP-vDG" storyboardName="FinishPlay" referencedIdentifier="UIViewController-zgb-FP-vDG" id="AyB-KO-YfF" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SA9-eq-Pq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1601" y="588"/>
+            <point key="canvasLocation" x="1408" y="607"/>
         </scene>
     </scenes>
     <resources>
