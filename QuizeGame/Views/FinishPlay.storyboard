@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController storyboardIdentifier="UIViewController-zgb-FP-vDG" id="zgb-FP-vDG" customClass="FinishedImageQuestionViewController" customModule="QuizeGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z25-Hz-HT5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="จบเกมส์" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyc-3f-x08">
@@ -46,22 +46,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajs-Jm-Tdv">
-                                <rect key="frame" x="228" y="395" width="131" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="กลับเมนู"/>
-                                <connections>
-                                    <segue destination="dOe-kz-oIW" kind="unwind" unwindAction="unwindSegue:" id="Lbf-pL-5kh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50y-ZZ-euG">
-                                <rect key="frame" x="16" y="395" width="131" height="30"/>
+                                <rect key="frame" x="16" y="395" width="150" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="เล่นอีกครั้ง"/>
                                 <connections>
                                     <action selector="onPlayAgain:" destination="zgb-FP-vDG" eventType="touchUpInside" id="DzA-5H-SaN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajs-Jm-Tdv">
+                                <rect key="frame" x="244" y="394" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="กลับเมนู"/>
+                                <connections>
+                                    <segue destination="dOe-kz-oIW" kind="unwind" unwindAction="unwindSegue:" id="Lbf-pL-5kh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,7 +86,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-OI5-cW-NCt" storyboardName="ImageQuestion" referencedIdentifier="UIViewController-OI5-cW-NCt" id="FZv-fb-dYw" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OX-Fs-EgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="126"/>
+            <point key="canvasLocation" x="1224" y="130"/>
         </scene>
         <!--UIViewController-0eI-5G-HDP-->
         <scene sceneID="qcy-u8-0tD">
@@ -94,7 +94,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-0eI-5G-HDP" storyboardName="SoundQuestion" referencedIdentifier="UIViewController-0eI-5G-HDP" id="Vlu-8S-JAW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tck-xc-sUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1408" y="607"/>
+            <point key="canvasLocation" x="1224" y="982"/>
         </scene>
     </scenes>
 </document>
