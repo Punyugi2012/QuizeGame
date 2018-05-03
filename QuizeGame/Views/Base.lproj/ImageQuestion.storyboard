@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Question View Controller-->
+        <scene sceneID="Ilw-0p-NJg">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-OI5-cW-NCt" id="OI5-cW-NCt" customClass="ImageQuestionViewController" customModule="QuizeGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="al9-tR-QR9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5k-eq-1QO">
+                                <rect key="frame" x="0.0" y="10" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ข้อ 1 / 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMx-i0-D5z">
+                                        <rect key="frame" x="19" y="18" width="375" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="หมานั่ง" translatesAutoresizingMaskIntoConstraints="NO" id="gea-mT-ZMz">
+                                        <rect key="frame" x="20" y="65" width="374" height="268"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWU-Fu-cHK">
+                                        <rect key="frame" x="56" y="415" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="touchAnswer:" destination="OI5-cW-NCt" eventType="touchUpInside" id="nX5-pQ-lvd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntq-eO-NbA">
+                                        <rect key="frame" x="56" y="467" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="touchAnswer:" destination="OI5-cW-NCt" eventType="touchUpInside" id="0I3-CS-ZaC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmG-QJ-nmy">
+                                        <rect key="frame" x="56" y="522" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="touchAnswer:" destination="OI5-cW-NCt" eventType="touchUpInside" id="GBi-Db-eEy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOE-AY-l33">
+                                        <rect key="frame" x="56" y="576" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="touchAnswer:" destination="OI5-cW-NCt" eventType="touchUpInside" id="w5I-ee-Dul"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgA-Ou-8wG">
+                                        <rect key="frame" x="320" y="674" width="76" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="เลิกเล่น">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="slR-NT-0f0" kind="unwind" unwindAction="unwindSegue:" id="FXp-1y-cVg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="รูปนี้คือรูปอะไร?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkT-xS-Gnc">
+                                        <rect key="frame" x="15" y="358" width="379" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N5k-eq-1QO" firstAttribute="height" secondItem="al9-tR-QR9" secondAttribute="height" id="3oQ-7e-hyn"/>
+                            <constraint firstItem="N5k-eq-1QO" firstAttribute="centerY" secondItem="eUR-Oz-MSi" secondAttribute="centerY" id="Be7-4f-Dmf"/>
+                            <constraint firstItem="N5k-eq-1QO" firstAttribute="width" secondItem="al9-tR-QR9" secondAttribute="width" id="D2x-Yv-iPS"/>
+                            <constraint firstItem="N5k-eq-1QO" firstAttribute="centerX" secondItem="eUR-Oz-MSi" secondAttribute="centerX" id="fq3-9E-8eQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eUR-Oz-MSi"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentQuestionLabel" destination="aMx-i0-D5z" id="qX7-ZP-pgh"/>
+                        <outlet property="myConstraint" destination="fq3-9E-8eQ" id="xmW-Y2-1Bl"/>
+                        <outlet property="myView" destination="N5k-eq-1QO" id="ad8-Zt-EtC"/>
+                        <outlet property="questionImage" destination="gea-mT-ZMz" id="RLe-qi-IFd"/>
+                        <outletCollection property="myButtons" destination="ZWU-Fu-cHK" collectionClass="NSMutableArray" id="MNR-Kg-gEF"/>
+                        <outletCollection property="myButtons" destination="Ntq-eO-NbA" collectionClass="NSMutableArray" id="G14-jj-OCY"/>
+                        <outletCollection property="myButtons" destination="HmG-QJ-nmy" collectionClass="NSMutableArray" id="tqm-Qe-oVs"/>
+                        <outletCollection property="myButtons" destination="tOE-AY-l33" collectionClass="NSMutableArray" id="jBQ-De-AhR"/>
+                        <segue destination="vpE-n1-PQO" kind="show" identifier="ToFinish" id="ied-OE-X1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lm-6H-8eW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="slR-NT-0f0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1409" y="126"/>
+        </scene>
+        <!--UIViewController-zgb-FP-vDG-->
+        <scene sceneID="18b-Dp-W7O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-zgb-FP-vDG" id="vpE-n1-PQO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCU-zO-fLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2466" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="หมานั่ง" width="344" height="400"/>
+    </resources>
+</document>

@@ -53,7 +53,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4ER-Bt-CZv" kind="presentation" identifier="ToSoundQuestion" modalTransitionStyle="crossDissolve" id="3Ix-iB-Dm5"/>
+                                    <segue destination="4ER-Bt-CZv" kind="presentation" modalTransitionStyle="crossDissolve" id="3Ix-iB-Dm5"/>
                                 </connections>
                             </button>
                         </subviews>

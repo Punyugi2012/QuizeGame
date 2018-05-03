@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sound Question View Controller-->
+        <scene sceneID="R8z-Kt-dXu">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-0eI-5G-HDP" id="0eI-5G-HDP" customClass="SoundQuestionViewController" customModule="QuizeGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YP8-z7-jgV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UF4-cs-bxP">
+                                <rect key="frame" x="0.0" y="10" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ข้อ 1 / 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plC-xD-ady">
+                                        <rect key="frame" x="20" y="18" width="375" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbq-zr-ydV">
+                                        <rect key="frame" x="57" y="478" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onTouchAnswer:" destination="0eI-5G-HDP" eventType="touchUpInside" id="6Ga-M1-V2r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojk-re-vHk">
+                                        <rect key="frame" x="330" y="689" width="76" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="เลิกเล่น">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tyr-zn-cuS" kind="unwind" unwindAction="unwindSegue:" id="bma-0t-Ggg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="เสียงนี้คือเสียงอะไร?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqc-Fz-I37">
+                                        <rect key="frame" x="20" y="65" width="375" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcN-Q2-98i">
+                                        <rect key="frame" x="57" y="402" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onTouchAnswer:" destination="0eI-5G-HDP" eventType="touchUpInside" id="M6K-bl-601"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxv-H2-vz0">
+                                        <rect key="frame" x="57" y="440" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onTouchAnswer:" destination="0eI-5G-HDP" eventType="touchUpInside" id="ifH-5M-W8o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agb-Of-RCF">
+                                        <rect key="frame" x="57" y="516" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onTouchAnswer:" destination="0eI-5G-HDP" eventType="touchUpInside" id="DDi-fS-L4d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgs-7A-rOf">
+                                        <rect key="frame" x="142" y="156" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="audio"/>
+                                        <connections>
+                                            <action selector="onPlay" destination="0eI-5G-HDP" eventType="touchUpInside" id="7IT-Ai-nOL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UF4-cs-bxP" firstAttribute="height" secondItem="YP8-z7-jgV" secondAttribute="height" id="6hO-8a-aVE"/>
+                            <constraint firstItem="UF4-cs-bxP" firstAttribute="centerY" secondItem="gZ0-Wb-vMj" secondAttribute="centerY" id="8tN-fR-V83"/>
+                            <constraint firstItem="UF4-cs-bxP" firstAttribute="centerX" secondItem="gZ0-Wb-vMj" secondAttribute="centerX" id="Qsw-lP-lUx"/>
+                            <constraint firstItem="UF4-cs-bxP" firstAttribute="width" secondItem="YP8-z7-jgV" secondAttribute="width" id="dGW-nk-gIc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gZ0-Wb-vMj"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentQuestionLabel" destination="plC-xD-ady" id="lZq-f0-hhP"/>
+                        <outlet property="myConstraint" destination="Qsw-lP-lUx" id="L7e-3I-NZX"/>
+                        <outlet property="myView" destination="UF4-cs-bxP" id="b8M-2X-VbH"/>
+                        <outlet property="playButton" destination="Rgs-7A-rOf" id="ogX-ao-NCK"/>
+                        <outletCollection property="buttons" destination="hcN-Q2-98i" collectionClass="NSMutableArray" id="ZJF-bi-T0X"/>
+                        <outletCollection property="buttons" destination="pxv-H2-vz0" collectionClass="NSMutableArray" id="Bh0-Rq-gpy"/>
+                        <outletCollection property="buttons" destination="Sbq-zr-ydV" collectionClass="NSMutableArray" id="3gc-AH-U4H"/>
+                        <outletCollection property="buttons" destination="agb-Of-RCF" collectionClass="NSMutableArray" id="aJ0-Ty-ZF5"/>
+                        <segue destination="Mw4-9p-qcA" kind="show" identifier="ToFinish" id="8C1-kX-S8A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ho-Ni-714" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tyr-zn-cuS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1409" y="880"/>
+        </scene>
+        <!--UIViewController-zgb-FP-vDG-->
+        <scene sceneID="0tM-Mr-PQd">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-zgb-FP-vDG" storyboardName="Main" referencedIdentifier="UIViewController-zgb-FP-vDG" id="Mw4-9p-qcA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHi-A7-lvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="588"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="audio" width="256" height="256"/>
+    </resources>
+</document>

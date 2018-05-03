@@ -46,7 +46,7 @@
                                 </view>
                                 <size key="customSize" width="110" height="110"/>
                                 <connections>
-                                    <segue destination="FVe-8s-se8" kind="show" id="fUc-nI-aaM"/>
+                                    <segue destination="FVe-8s-se8" kind="show" identifier="ToPrepareSoundQuestion" id="fUc-nI-aaM"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Image" id="RvN-LS-gEa" userLabel="image">
